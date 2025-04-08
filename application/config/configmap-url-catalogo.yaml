@@ -1,0 +1,7 @@
+apiVersion: v1 
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: api
+data:
+  API_URL: "https://api.konzelmann.com.br"
