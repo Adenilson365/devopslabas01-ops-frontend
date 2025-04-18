@@ -19,7 +19,7 @@ spec:
               curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage \
                             -d chat_id=${TELEGRAM_CHAT_ID} \
                             -d parse_mode=Markdown \
-                            -d text=$'ℹ️ *Deploy de MS-FrontEnd INICIADO!*\n- Namespace: `api`\n- Ambiente: `dev`'
+                            -d text=$'ℹ️ *Deploy de MS-FrontEnd INICIADO!*\n- Namespace: `api`\n- Ambiente: `PROD`'
           env:
             - name: TELEGRAM_TOKEN
               valueFrom:
@@ -54,7 +54,7 @@ spec:
               curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage \
                             -d chat_id=${TELEGRAM_CHAT_ID} \
                             -d parse_mode=Markdown \
-                            -d text=$'✅ *Deploy de MS-FrontEnd Concluído com SUCESSO!*\n- Namespace: `api`\n- Ambiente: `dev`'
+                            -d text=$'✅ *Deploy de MS-FrontEnd Concluído com SUCESSO!*\n- Namespace: `api`\n- Ambiente: `PROD`'
           env:
             - name: TELEGRAM_TOKEN
               valueFrom:
@@ -89,7 +89,7 @@ spec:
               curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage \
                             -d chat_id=${TELEGRAM_CHAT_ID} \
                             -d parse_mode=Markdown \
-                            -d text=$'❌ *Deploy de MS-FrontEnd Concluído com FALHAS!*\n- Namespace: `api`\n- Ambiente: `dev`'
+                            -d text=$'❌ *Deploy de MS-FrontEnd Concluído com FALHAS!*\n- Namespace: `api`\n- Ambiente: `PROD`'
           env:
             - name: TELEGRAM_TOKEN
               valueFrom:
