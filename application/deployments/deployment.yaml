@@ -39,7 +39,7 @@ spec:
             name: frontend-config
       containers:
       - name: frontend
-        image: adenilsonkon/devopslabs-frontend:dev-52c33d7
+        image: adenilsonkon/devopslabs-frontend:dev-e2f24c1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
